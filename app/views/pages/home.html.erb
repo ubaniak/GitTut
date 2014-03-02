@@ -1,13 +1,47 @@
 
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#test">Test</button>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-2">
+                <h4>Step 1</h4>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#test">Clone</button>
+            </div>
+            <div class="col-md-10">
+                <div class="arrow_down" id="cloud_bg">
+                    <div id="cloud"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <p> Clone your repositroy from Gitlab.  </p>
+        <p> Remember to setup your ssh keys.  </p>
+    </div>
+</div>
 
 
-<%= render "modals/test" %>
+<div class="row" style="padding-top: 30px;">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-2">
+                <h4>Step 2</h4>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#test">Checkout</button>
+            </div>
+            <div class="col-md-10">
+                <div class="arrow_down" id="cloud_bg">
+                    <div id="folder"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <p> Switch/Checkout to the current stable version  </p>
+        <p> of your code  </p>
+    </div>
+</div>
 
-<div id="cloud"><span class="shadow"></span></div>
 
-<div class="folder"></div>
 
-<div class="arrow_up">
-    there is something in here
+<div class="modals">
+    <%= render "modals/test" %>
 </div>
