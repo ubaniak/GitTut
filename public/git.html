@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GitTut</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<style>
+	
+		@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+		/* entypo */
+		[class*="entypo-"]:before {
+		  font-family: 'entypo', sans-serif;
+		  font-size:2em;
+		}
+		.glyphicon{
+			font-size:2em;
+		}
+		/*div{border:1px solid black;}*/
+
+		div.row.content {
+			border-bottom: 4px  rgba(118, 180, 255, 0.5);
+			border-radius: 20px;
+			padding: 50px 20px 50px 20px;
+
+			background: -webkit-linear-gradient(#fff 95%, rgba(118, 180, 255, 0.5)); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#fff 95%, rgba(118, 180, 255, 0.5)); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#fff 95%, rgba(118, 180, 255, 0.5)); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#fff 95%, rgba(118, 180, 255, 0.5)); /* Standard syntax */
+
+		}
+		div.row.triangle{
+			background: none;
+		}
+		.triangle-down {
+			width: 0;
+			height: 0;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			border-top: 25px solid rgba(118, 180, 255, 0.5);			
+		}			
+
+	</style>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row content">
+			
+			<div class="col-md-2 text-center">
+				<strong>Clone</strong><br>
+				<span class="glyphicon glyphicon-cloud-download"></span><br>
+				<span class="entypo-monitor"></span>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav nav-pills nav-stacked">
+				  	<li class="active"><a href="#">Home</a></li>
+				  	<li><a href="#">Profile</a></li>
+				  	<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+				  	<li class="active"><a href="#tab-cmd" data-toggle="tab">Command Line</a></li>
+				  	<li><a href="#tab-gui" data-toggle="tab">TortoiseGit</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+				  	<div class="tab-pane active" id="tab-cmd">
+				  		Odit maecenas, sed vivamus quibusdam, in, eligendi eleifend incididunt, torquent! Ea fuga. Dolor hac, nisi? Corporis turpis a curae morbi dignissim voluptatum consequuntur quidem! Ad minima excepteur atque sociis laboris, recusandae aut beatae scelerisque eget ab repudiandae officiis nesciunt quas sapien, scelerisque. Risus in, elit. Veritatis sapien mattis similique ornare.	
+				  	</div>
+				  	<div class="tab-pane" id="tab-gui">
+				  		Taciti dignissim sunt at vero distinctio voluptatum pharetra? Officiis architecto, a laoreet blanditiis sed per rutrum, asperiores leo fermentum quia, nemo optio quas vitae blanditiis nullam mollit. Dolorum ratione vestibulum deleniti vivamus tempore felis commodi, vehicula necessitatibus volutpat illo etiam ligula ducimus? Lobortis accusamus tincidunt, netus sodales facilis qui felis	.
+				  	</div>
+				</div>		
+			</div>			
+		</div>
+		<div class="row triangle">
+			<div class="triangle-down center-block"></div>
+		</div>	
+
+
+		<div class="row content">
+			<div class="col-md-2 text-center">
+				<strong>Branch</strong><br>
+				<span class="entypo-flow-cascade"></span>
+			</div>
+			<div class="col-md-2">
+
+				<ul class="nav nav-pills nav-stacked">
+				  	<li class="active"><a href="#">Home</a></li>
+				  	<li><a href="#">Profile</a></li>
+				  	<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+				  	<li class="active"><a href="#tab-cmd" data-toggle="tab">Command Line</a></li>
+				  	<li><a href="#tab-gui" data-toggle="tab">TortoiseGit</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+				 	<div class="tab-pane active" id="tab-cmd">
+				  		Odit maecenas, sed vivamus quibusdam, in, eligendi eleifend incididunt, torquent! Ea fuga. Dolor hac, nisi? Corporis turpis a curae morbi dignissim voluptatum consequuntur quidem! Ad minima excepteur atque sociis laboris, recusandae aut beatae scelerisque eget ab repudiandae officiis nesciunt quas sapien, scelerisque. Risus in, elit. Veritatis sapien mattis similique ornare.	
+				  	</div>
+				  	<div class="tab-pane" id="tab-gui">
+				  		Taciti dignissim sunt at vero distinctio voluptatum pharetra? Officiis architecto, a laoreet blanditiis sed per rutrum, asperiores leo fermentum quia, nemo optio quas vitae blanditiis nullam mollit. Dolorum ratione vestibulum deleniti vivamus tempore felis commodi, vehicula necessitatibus volutpat illo etiam ligula ducimus? Lobortis accusamus tincidunt, netus sodales facilis qui felis.
+				  	</div>
+				</div>	
+			</div>			
+		</div>
+		<div class="row triangle">
+			<div class="triangle-down center-block"></div>
+		</div>	
+		<div class="row content">
+			<div class="col-md-2 text-center">
+				<strong>Merge/Rebase</strong><br>
+				<span class="entypo-flow-branch"></span><br>
+				<strong>Push</strong><br>
+				<span class="glyphicon glyphicon-cloud-upload"></span><br>
+				<span class="entypo-monitor"></span><br>
+				<strong>Submodule</strong><br>
+				<span class="entypo-flow-parallel"></span><br>
+				<strong>Settings</strong><br>
+				<span class="entypo-cog"></span><br>
+				<strong>Checkout</strong><br>
+				<span class="entypo-switch"></span><br>
+				<strong>Add/Remove/Modify</strong><br>
+				<span class="entypo-plus"></span><br>
+				<span class="entypo-trash"></span><br>
+				<span class="entypo-pencil"></span>
+
+
+			</div>
+			<div class="col-md-2">
+
+				<ul class="nav nav-pills nav-stacked">
+				  	<li class="active"><a href="#">Home</a></li>
+				  	<li><a href="#">Profile</a></li>
+				  	<li><a href="#">Messages</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="#tab-cmd" data-toggle="tab">Command Line</a></li>
+				  <li><a href="#tab-gui" data-toggle="tab">TortoiseGit</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+				  <div class="tab-pane active" id="tab-cmd">
+				  	Odit maecenas, sed vivamus quibusdam, in, eligendi eleifend incididunt, torquent! Ea fuga. Dolor hac, nisi? Corporis turpis a curae morbi dignissim voluptatum consequuntur quidem! Ad minima excepteur atque sociis laboris, recusandae aut beatae scelerisque eget ab repudiandae officiis nesciunt quas sapien, scelerisque. Risus in, elit. Veritatis sapien mattis similique ornare.	
+				  </div>
+				  <div class="tab-pane" id="tab-gui">
+				  	Taciti dignissim sunt at vero distinctio voluptatum pharetra? Officiis architecto, a laoreet blanditiis sed per rutrum, asperiores leo fermentum quia, nemo optio quas vitae blanditiis nullam mollit. Dolorum ratione vestibulum deleniti vivamus tempore felis commodi, vehicula necessitatibus volutpat illo etiam ligula ducimus? Lobortis accusamus tincidunt, netus sodales facilis qui felis.
+				  </div>
+				</div>			
+			</div>			
+		</div>
+		<div class="row triangle">
+			<div class="triangle-down center-block"></div>
+		</div>	
+	</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
