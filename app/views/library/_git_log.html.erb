@@ -1,0 +1,87 @@
+<ul class="nav nav-tabs">
+
+    <li class="active">
+        <a href="#command-line_git_log" data-toggle="tab">Command Line</a>
+    </li>
+    <li>
+        <a href="#tortoise_git_log" data-toggle="tab">Tortoise Git</a>
+    </li>
+    <li>
+        <a href="#man_git_log" data-toggle="tab">Man</a>
+    </li>
+</ul>
+
+<!-- Tab Panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="command-line_git_log">
+        Show commits bellow HEAD
+        <div id="window">
+            <div id="body">
+                <p>git log </p>
+            </div>
+        </div>
+
+        Show all commit messages
+        <div id="window">
+            <div id="body">
+                <p>git log --all </p>
+            </div>
+        </div>
+
+        Show all file diffs
+        <div id="window">
+            <div id="body">
+                <p>git log -p </p>
+            </div>
+        </div>
+
+        Show all file committed
+        <div id="window">
+            <div id="body">
+                <p>git log --stat </p>
+            </div>
+        </div>
+
+        All commits for a user
+        <div id="window">
+            <div id="body">
+                <p>git log --author "AuthorName"</p>
+            </div>
+        </div>
+
+        Follow a file
+        <div id="window">
+            <div id="body">
+                <p>git log -- filename.extention</p>
+            </div>
+        </div>
+
+        Search the log messages for a specific word
+        <div id="window">
+            <div id="body">
+                <p>git log --grep=&lt;regexp&gt;</p>
+            </div>
+        </div>
+
+        Search source code for a specific message
+        <div id="window">
+            <div id="body">
+                <p>git grep &lt;regexp&gt; $(git rev-list --all)</p>
+            </div>
+        </div>
+
+        Pretty log
+        <div id="window">
+            <div id="body">
+                <p>git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane" id="tortoise_git_log">
+        Durp
+    </div>
+    <div class="tab-pane" id="man_git_log">
+        <a href="https://www.kernel.org/pub/software/scm/git/docs/git-log.html">git-log(1)</a>
+    </div>
+</div>
