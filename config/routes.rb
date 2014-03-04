@@ -1,4 +1,5 @@
 Gittut::Application.routes.draw do
+    get "display_library" => "pages#display_library"
   root "pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

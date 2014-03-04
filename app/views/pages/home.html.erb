@@ -1,4 +1,114 @@
-<div>
-    <%= render "library/submodules" %>
-</div>
+<script>
+    $(document).ready(function() {
+        $("li.action").click(function() {
+            $.get("/display_library", { lib: this.id } );
+        });
+    });
+</script>
 
+<div class="row">
+    <div class="col-md-6 scrollable">
+
+        <!------------!>
+        <div class="row content">
+            <div class="col-md-4 text-center">
+                <strong>Clone</strong><br>
+                <span class="glyphicon glyphicon-cloud-download"></span><br>
+                <span class="entypo-monitor"></span>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="action" id="git_clone"><button class="btn btn-default">Clone</button></li>
+                    <li class="action" id="gitlab_ssh"><button class="btn btn-default">SSH</button></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                Clone the repository if you have not already done so.
+            </div>
+
+        </div>
+        <div class="row triangle">
+            <div class="triangle-down center-block"></div>
+        </div>	
+        <!------------!>
+
+        <!------------!>
+        <div class="row content">
+            <div class="col-md-4 text-center">
+				<strong>Checkout</strong><br>
+				<span class="entypo-switch"></span><br>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="action" id="git_checkout"><button class="btn btn-default">Checkout</button></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                Get the latest version of the code
+            </div>
+
+        </div>
+        <div class="row triangle">
+            <div class="triangle-down center-block"></div>
+        </div>	
+        <!------------!>
+
+        <!------------!>
+        <div class="row content">
+            <div class="col-md-4 text-center">
+				<strong>Branch</strong><br>
+				<span class="entypo-flow-cascade"></span>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="action" id="git_branch"><button class="btn btn-default">Branch</button></li>
+                    <li class="action" id="git_submodules"><button class="btn btn-default">Submodules</button></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                Create a new branch.
+                Always update submodules.
+            </div>
+
+        </div>
+        <div class="row triangle">
+            <div class="triangle-down center-block"></div>
+        </div>	
+        <!------------!>
+
+        <!------------!>
+        <div class="row content">
+            <div class="col-md-4 text-center">
+				<strong>Add/Remove/Modify</strong><br>
+				<span class="entypo-plus"></span><br>
+				<span class="entypo-trash"></span><br>
+				<span class="entypo-pencil"></span>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="action" id="git_add"><button class="btn btn-default">Add</button></li>
+                    <li class="action" id="git_commit"><button class="btn btn-default">Commit</button></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+
+        </div>
+        <div class="row triangle">
+            <div class="triangle-down center-block"></div>
+        </div>	
+        <!------------!>
+    </div>
+    <div class="col-md-6">
+        <div class="display_area">
+        </div>
+    </div>
+</div>
